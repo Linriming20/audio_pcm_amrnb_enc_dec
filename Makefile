@@ -11,6 +11,6 @@ amrnb2pcm: main_amrnb2pcm.c libs/libopencore-amrnb.a
 	$(CC) $^ $(CFLAG) -o $@
 
 clean :
-	rm -rf pcm2amrnb amrnb2pcm
+	rm -rf pcm2amrnb amrnb2pcm out*
 .PHONY := clean
 

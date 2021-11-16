@@ -31,7 +31,8 @@ int main(int argc, char *argv[])
 	/* 检查参数 */
 	if(argc != 3)
 	{
-		printf("Usage: %s ./audio/test.pcm out.amr\n", argv[0]);
+		printf("Usage: \n"
+			   "\t %s ./audio/test_8000_16_1.pcm out.amr\n", argv[0]);
 		return -1;
 	}
 	printf("It will encode a PCM file as [sample rate: %d] - [sample bits: %d] - [channels: %d] !\n", 

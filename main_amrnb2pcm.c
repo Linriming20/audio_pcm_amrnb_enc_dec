@@ -4,7 +4,7 @@
 
 #include "interf_dec.h"
 
-/* 我们已知audio/目录下的amr文件解码出来的PCM参数 */
+/* amrnb解码出来的PCM就是这个参数 */
 #define PCM_SAMPLERATE  (8000)
 #define PCM_SAMPLEBITS  (16)
 #define PCM_CHANNELS    (1)
@@ -29,7 +29,8 @@ int main(int argc, char *argv[])
 	/* 检查参数 */
 	if(argc != 3)
 	{
-		printf("Usage: %s ./audio/test.amr out.pcm\n", argv[0]);
+		printf("Usage: \n"
+			   "\t %s ./audio/test.amr out_8000_16_1.pcm\n", argv[0]);
 		return -1;
 	}
 
